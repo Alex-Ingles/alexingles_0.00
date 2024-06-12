@@ -1,0 +1,416 @@
+
+:root {
+    --primary: #029ae0;
+    --primary-100: #073044;
+    --primary-200: #415a66;
+    --primary-300: #017cb3;
+    --primary-400: hsl(199, 75%, 61%);
+    --background: rgb(230, 230, 230);
+    --background-100: rgb(235, 235, 235);
+    --background-200: rgb(240, 240, 240);
+    --background-300: rgb(245, 245, 245);
+    --background-400: rgb(250, 250, 250);
+    --background-500: rgb(255, 255, 255);
+    --fontsize: 12px;
+    --fontsize-xl: 36px;
+    --fontsize-l: 24px;
+    --fontsize-m: 16px;
+    --fontsize-s: 12px;
+    --fontsize-xs: 10px;
+}
+
+* {
+    font-family: "Courier New";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    width: 100vw;
+    height: 100vh; 
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+dialog:modal {
+    width: 100%;
+    height: 100%; 
+    max-width: 100%;
+    max-height: 100%;
+    overflow: scroll;
+    /* background-color: var(--background);
+    display: flex;
+    align-items: center;
+    justify-items: center; */
+}
+
+#new-project-modal {
+    background-color: transparent;
+    width: 50%;
+    height: 100%; 
+    max-width: 100%;
+    max-height: 100%;
+}
+
+header {
+    background-color: var(--background-300);
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.bento-box {
+    width: 100%;
+    height: 100%;
+    padding: 100px 100px;
+    left: auto;
+    right: auto;
+    background-color: var(--background-300);
+    display: grid;
+    row-gap: 5px;
+    column-gap:5px;
+    float:right;
+    align-items: center;
+    vertical-align: middle;
+    grid: auto-flow dense 33.33% / repeat(10, [line1 line2 line3 line4] 9%);
+    /* grid: auto-flow dense 33.33% / repeat(6, [line1 line2 line3 line4] 200px);
+    grid: auto-flow dense 40% / auto-flow dense 200px);
+    grid: auto-flow 300px; */
+    overflow: scroll;
+} 
+
+.bento-box-50 {
+    width: 100%;
+    height: 100%;
+    padding: 100px 0px 100px 100px;
+    left: auto;
+    right: auto;
+    background-color: var(--background-300);
+    display: grid;
+    row-gap: 5px;
+    column-gap:5px;
+    float:right;
+    align-items: center;
+    vertical-align: middle;
+    grid: auto-flow dense 33.33% / repeat(5, [line1 line2 line3 line4] 18%);
+    /* grid: auto-flow dense 33.33% / repeat(6, [line1 line2 line3 line4] 200px);
+    grid: auto-flow dense 40% / auto-flow dense 200px);
+    grid: auto-flow 300px; */
+    overflow: scroll;
+} 
+.bento-btn {
+    background-color: var(--background-300);
+    box-shadow: var(--background-200) 5px 5px 5px;
+    border: 0.5px solid lightgrey;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    font-size: var(--fontsize-m);
+    overflow: scroll;
+}
+
+.bento-list {
+    background-color: var(--background-300);
+    box-shadow: var(--background-200) 5px 5px 5px;
+    border: 0.5px solid lightgrey;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: start;
+    justify-content: start;
+    vertical-align: middle;
+    /* margin: 10px; */
+    /* padding: 20px; */
+    overflow: scroll;
+}
+
+.bento-form {
+    background-color: var(--background-300);
+    box-shadow: var(--background-200) 5px 5px 5px;
+    border: 0.5px solid lightgrey;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    /* margin: 10px; */
+    /* padding: 20px; */
+}
+
+
+/* .bento-part-btn {
+    background-color: transparent;
+    width: 100%;
+    height: 100px;
+} */
+
+.material-icons-round {
+    font-family: "Material Icons Round";
+    font-size: 100px;
+    /* width: 100%;
+    height: 50%;
+    object-fit: cover; */
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 200,
+    'GRAD' 0,
+    'opsz' 24;
+}
+.bento-btn:hover {
+    box-shadow: lightgrey 5px 5px 5px;
+    border: 0.5px solid grey;
+    display: flex;
+    /* margin: 10px; */
+    /* padding: 20px; */
+}
+
+.bento-btn:hover {
+    background-color: var(--background-300);
+    box-shadow: lightgrey 5px 5px 5px;
+    border: 0.5px solid grey;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    /* margin: 10px; */
+    /* padding: 20px; */
+}
+
+
+/* .bento-btn-1 {
+    width: 50%;
+    height: 50%;
+} */
+
+
+.uno-uno {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+.uno-dos {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+.uno-tres {
+    grid-column: span 1;
+    grid-row: span 3;
+}
+.dos-dos {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.dos-tres {
+    grid-column: span 2;
+    grid-row: span 3;
+}
+.tres-tres {
+    grid-column: span 3;
+    grid-row: span 3;
+}
+.cuatro-tres {
+    grid-column: span 4;
+    grid-row: span 3;
+}
+.cinco-tres {
+    grid-column: span 5;
+    grid-row: span 3;
+}
+
+.seis-tres {
+    grid-column: span 6;
+    grid-row: span 3;
+}
+
+.part-content {
+    background-color: var(--background-300);
+    /* border: 1px solid black; */
+
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* PROJECTS DIALOG */
+
+/* modal {
+    width: 100vw;
+    height: 100vh; 
+    background-color: var(--background);
+    display: flex;
+    align-items: center;
+    justify-items: center;
+} */
+
+dialog {
+    background-color: transparent;
+    border: none;
+    margin: 0 0;
+}
+
+
+dialog::backdrop {
+    background-color: rgba(198, 195, 195, 0.5);
+    backdrop-filter: var(--background-100) blur(10px);
+}
+
+/*  FORM ----------------------------------------------------------------------------------------------------------*/
+
+.bento-form {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: left;
+}
+
+.form-field-container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    width: 100%;
+}
+
+.form-buttons-container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+
+input {
+    width: 100%;
+
+}
+textarea {
+    width: 100%;
+}
+
+.bento-header {
+    font-weight: bold;
+}
+
+.image-contanier {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll ;
+}
+
+.project-data-container {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    column-gap: 5px;
+    justify-items: center;
+}
+.data-field {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 10px;
+    font-size: var(--fontsize-xs);
+    font-style: "Courier New";
+
+}
+.key {
+    width: 50%;
+    text-align: right;
+}
+.value {
+    width: 50%;
+    text-align: left;
+}
+
+.projects-list {
+    display: flex;
+    /* grid-template-columns: repeat 8(12,5%); */
+    flex-direction: column;
+    justify-items:auto;
+}
+
+.project-container {
+    font-size: var(--fontsize-xs);
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+    row-gap: 5px;
+    /* justify-items: space-between; */
+}
+
+.list-header {
+    font-size: var(--fontsize-s)
+}
+
+.list-line {
+    width: 100%;
+    font-size: var(--fontsize-xs);
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-items: left;
+    justify-content:left;
+    column-gap: 5px;
+    /* justify-content: space-between; */
+    overflow:hidden;
+}
+
+.value {
+    /* border: 1px solid; */
+    border-radius: 5px;
+    background-color: var(--background-200);
+    overflow: wrap;
+    justify-content: left;
+}
+
+/* ----------------------------- GIS ------------------------------------------------------------------------------- */
+
+.viewer {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+
+.untouchable {
+    pointer-events: none;
+}
+
+/* ---- USERS LIST ------------------------------------------------------------------------------------------------- */
+
+.users-list {
+    display: flex;
+    /* grid-template-columns: repeat 8(12,5%); */
+    flex-direction: column;
+    justify-items: flex-start;
+}
