@@ -1,0 +1,16 @@
+{
+  "name": "alexingles_0.00",
+  "version": "1.0.0",
+  "description": "New try",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.4.5",
+    "vite": "^5.3.0"
+  }
+}
