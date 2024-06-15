@@ -52,7 +52,7 @@ setDefaultProjectUI() {
 	this.list.push(defaultProject)
 	console.warn("Default Project is created")
 	return defaultProject
-	}
+}
 
 
 
@@ -81,10 +81,4 @@ setDefaultProjectUI() {
 //         console.log("default project removed")
 //         return(document)
 //	}
-
-}
-
-
-}
-
 }
