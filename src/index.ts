@@ -108,6 +108,35 @@ if (gisBtn) {
     console.warn("gis Button was not found")
 }
 
+// Clean Pages
+function cleanPages() {
+    const homePage = document.getElementById("home-page")
+    if (homePage) {
+        homePage.style.display = "none"
+    }
+}
+// ------------------------------------------------------------------------------------------------
+// Cost-Btn //
+const costBtn = document.getElementById("bento-btn-cost");
+const costPage = document.getElementById("cost-page")
+    if (costBtn && costPage)
+        costBtn.addEventListener("click", () => {
+            cleanPages()
+            costPage.style.display = "flex"
+        })
+
+
+// // Projects-Btn
+// const projectsBtn = document.getElementById("nav-projects-btn")
+// const projectsPage = document.getElementById("projects-page")
+//     if (projectsBtn && projectsPage) {
+//         projectsBtn.addEventListener("click", () => {
+//             cleanPages()
+//             projectsPage.style.display = "flex"
+//         })
+//     }
+
+
 // ------------------------------------------------------------------------------------------------
 // Bento Button Home //
 
